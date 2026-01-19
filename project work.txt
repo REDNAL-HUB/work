@@ -1,0 +1,212 @@
+
+inventory-website/
+│
+├── index.html          (Home)
+├── inventory.html      (Inventory Table)
+├── add-item.html       (Form Page)
+├── about.html          (About Page)
+│
+├── css/
+│   └── style.css       (External CSS)
+│
+└── images/
+    ├── logo.png
+    ├── warehouse.jpg
+    ├── button.png
+    └── button-hover.png
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Inventory Management - Home</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<table class="layout">
+<tr>
+<td>
+    <img src="images/logo.png" class="box-image" alt="Logo">
+</td>
+<td>
+    <h1>Inventory Management System</h1>
+    <nav>
+        <a href="index.html">Home</a> |
+        <a href="inventory.html">Inventory</a> |
+        <a href="add-item.html">Add Item</a> |
+        <a href="about.html">About</a>
+    </nav>
+</td>
+</tr>
+</table>
+
+<p>Welcome to our Inventory Management System.</p>
+
+<!-- Absolute Link -->
+<p>
+    Visit <a href="https://www.google.com" target="_blank">Google</a> for more tools.
+</p>
+
+<!-- Hyperlinked Image -->
+<a href="inventory.html">
+    <img src="images/warehouse.jpg" alt="Warehouse" class="hyper-image">
+</a>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Inventory List</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<h1>Inventory List</h1>
+
+<nav>
+    <a href="index.html">Home</a> |
+    <a href="inventory.html">Inventory</a> |
+    <a href="add-item.html">Add Item</a> |
+    <a href="about.html">About</a>
+</nav>
+
+<table class="data">
+<tr>
+    <th>Item ID</th>
+    <th>Name</th>
+    <th>Quantity</th>
+    <th>Category</th>
+</tr>
+<tr>
+    <td>001</td>
+    <td>Keyboard</td>
+    <td>25</td>
+    <td>Electronics</td>
+</tr>
+<tr>
+    <td>002</td>
+    <td>Mouse</td>
+    <td>40</td>
+    <td>Electronics</td>
+</tr>
+</table>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Inventory Item</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<h1>Add New Item</h1>
+
+<nav>
+    <a href="index.html">Home</a> |
+    <a href="inventory.html">Inventory</a> |
+    <a href="add-item.html">Add Item</a> |
+    <a href="about.html">About</a>
+</nav>
+
+<form>
+
+<label>Item Name:</label>
+<input type="text"><br><br>
+
+<label>Quantity:</label>
+<input type="text"><br><br>
+
+<label>Category:</label><br>
+<input type="radio" name="category"> Electronics<br>
+<input type="radio" name="category"> Office<br><br>
+
+<label>Features:</label><br>
+<input type="checkbox"> Fragile<br>
+<input type="checkbox"> Heavy<br><br>
+
+<input type="submit" value="Add Item">
+
+</form>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About Us</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<h1>About This Project</h1>
+
+<nav>
+    <a href="index.html">Home</a> |
+    <a href="inventory.html">Inventory</a> |
+    <a href="add-item.html">Add Item</a> |
+    <a href="about.html">About</a>
+</nav>
+
+<p>This project was created for class presentation.</p>
+
+<!-- Rollover Image -->
+<a href="index.html">
+    <img src="images/button.png"
+         onmouseover="this.src='images/button-hover.png'"
+         onmouseout="this.src='images/button.png'">
+</a>
+
+</body>
+</html>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #0056b3;
+    margin-right: 10px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.layout {
+    border: none;
+    width: 100%;
+}
+
+.layout td {
+    border: none;
+}
+
+.data {
+    border-collapse: collapse;
+    width: 60%;
+}
+
+.data th, .data td {
+    border: 1px solid black;
+    padding: 8px;
+}
+
+.box-image {
+    width: 120px;
+    padding: 10px;
+    border: 3px solid #333;
+    margin: 10px;
+}
+
+.hyper-image {
+    width: 300px;
+}
+
